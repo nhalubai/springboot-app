@@ -1,0 +1,12 @@
+version: '3.2'
+
+networks:
+  default:
+    external:
+      name: springboot-app
+services:
+  spring-boot-app:
+    image: spring-boot-app
+    container_name: spring-boot-app
+    ports:
+      - 8080:8080
